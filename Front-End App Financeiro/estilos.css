@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+@font-face {
+    font-family: "negrito";
+    src: url(../fonts/KumbhSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/KumbhSans-Regular.ttf);
+}
+
+:root {
+    --cor-destaque: #5333ed;
+}
+
+/* MARCA */
+
+#marca {
+    background-color: white;
+    padding: 10px;
+}
+
+#marca * {
+    vertical-align: middle;
+}
+
+#marca img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#marca span {
+    font-family: "negrito";
+    font-size: 150%;
+    color: var(--cor-destaque);
+}
+
+/* HEADER */
+
+#header {
+    background-image: linear-gradient(to right, #4d13d1, #59abe3);
+    padding: 50px 10px 30px 30px;
+    color: white;
+}
+
+#boasVindas {
+    font-family: "negrito";
+    font-size: 500%;
+    display: block;
+}
+
+#slogan {
+    font-family: "padrao";
+    font-size: 200%;
+}
+
+/* CONTAINER*/
+
+#container {
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* SEÇÃO DA ESQUERDA */
+
+#esquerda {
+    width: 60%;
+    padding: 10px;
+}
+
+#lancamentos {
+    font-family: "negrito";
+    font-size: 200%;
+}
+
+#novoLancamento {
+    float: right;
+    border: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#novoLancamentoMobile {
+    display: none;
+}
+
+#formularioLancamento {
+    display: none;
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "padrao";
+}
+
+#formularioLancamento input {
+    display: block;
+    margin: 5px 0px 20px 0px;
+    border: 1px solid #cccccc;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "padrao";
+    font-size: 110%;
+    padding-left: 10px;
+}
+
+#botaoTipoLancamento {
+    margin: 5px 0px 20px 0px;
+}
+
+#botaoTipoLancamento input {
+    margin: 0px 0px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#botaoTipoLancamento label {
+    vertical-align: middle;
+    padding-right: 10px;
+    font-family: "negrito";
+    font-size: 120%;
+}
+
+#descricao {
+    width: 70%;
+}
+
+#botaoLancar {
+    border: none;
+    outline: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-family: "negrito";
+    padding: 10px 20px;
+    font-size: 130%;
+    border-radius: 5px;
+}
+
+#botaoexportar {
+    border: none;
+    outline: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-family: "negrito";
+    padding: 10px 20px;
+    font-size: 130%;
+    border-radius: 5px;
+}
+
+
+#areaLancamentos {
+    margin-top: 30px;
+}
+
+.blocoLancamento {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.blocoLancamento * {
+    vertical-align: middle;
+}
+
+.botoes {
+    width: 50%;
+}
+
+.imagemLancamento {
+    width: 50px;
+}
+
+.descricaoLancamento {
+    text-align: right;
+    width: 50%;
+}
+
+.descricaoLancamento span {
+    display: block;
+    font-family: "padrao";
+}
+
+.valor {
+    font-family: "negrito" !important;
+    font-size: 200%;
+}
+
+.gasto {
+    color: red;
+}
+
+.entrada {
+    color: #22a7f0;
+}
+
+.botaoRemover {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.botaoRemover:hover {
+    cursor: pointer;
+}
+
+.botaoRemover img {
+    width: 45px;
+}
+
+.botaoRemover:active img {
+    filter: invert(100%);
+}
+
+/* SEÇÃO DA DIREITA */
+
+#direita {
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 30px;
+    text-align: right;
+    font-family: "negrito";
+}
+
+#labelRenda {
+    font-size: 250%;
+    display: block;
+}
+
+#renda {
+    font-size: 500%;
+}
+
+/* GRÁFICO DE COMPORTAMENTO DE DINHEIRO */
+
+#graficoLancamentos {
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        padding: 30px 10px 20px 10px;
+        text-align: center;
+    }
+
+    #boasVindas {
+        font-size: 250%;
+    }
+
+    #slogan {
+        font-size: 100%;
+    }
+
+    #container {
+        display: block;
+        margin: 0;
+    }
+
+    #esquerda,
+    #direita {
+        width: 95%;
+        padding: 20px 0px;
+        margin: 0px auto;
+    }
+
+    #novoLancamento {
+        display: none;
+    }
+
+    #lancamentos {
+        display: none;
+    }
+
+    #novoLancamentoMobile {
+        display: block;
+        text-align: center;
+    }
+
+    #novoLancamentoMobile button {
+        border: none;
+        background-color: var(--cor-destaque);
+        color: white;
+        font-size: 300%;
+        padding: 7px 20px;
+        border-radius: 5px;
+        outline: none;
+        font-family: "negrito";
+    }
+
+    #formularioLancamento {
+        text-align: center;
+    }
+
+    #formularioLancamento input {
+        width: 90%;
+    }
+
+    #formularioLancamento input[type=radio] {
+        width: 7%;
+    }
+
+    #botaoTipoLancamento {
+        font-size: 90%;
+    }
+
+    #direita {
+        text-align: center;
+    }
+
+    #labelRenda {
+        font-size: 150%;
+    }
+
+    #renda {
+        font-size: 200%;
+    }
+
+    #graficoLancamentos {
+        width: 100%;
+    }
+
+    .blocoLancamento {
+        padding: 10px;
+    }
+
+    .imagemLancamento {
+        width: 30px;
+    }
+
+    .botaoRemover img {
+        width: 35px;
+    }
+
+    .botoes {
+        width: 40%;
+    }
+
+    .descricaoLancamento {
+        width: 60%;
+    }
+
+    .descricaoLancamento span {
+        font-size: 90%;
+    }
+
+    .valor {
+        font-size: 150% !important;
+    }
+}
